@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Platter</title>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+     
+     <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+    </style>
+    <!-- Font Awesome Tag -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Customize Color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'primary-green': '#179800',
+            }
+          }
+        }
+      }
+    </script>
+
+</head>
+<body class="font-sora">
+    <!-- Header Section -->
+     <header class="md:container md:mx-auto">
+
+      <nav class="bg-gray-500 px-24">
+
+      <div class="navbar ">
+        <div class="navbar-start">
+          <div class="dropdown ">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <img src="assets/logo-header.png" alt="">
+          
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Product</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+          <!-- <div >
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div> -->
+
+          <div class="navbar-end hidden lg:flex">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <a class="btn btn-outline btn-secondary">Login</a>
+            <a class="btn btn-primary">Register</a>
+          </div>
+        
+      </div>
+
+      </nav>
+
+      <!-- banner -->
+       <div>
+         
+        <div class="hero bg-base-200 min-h-screen grid  retive">
+          <div>
+            <h1 class="text-5xl font-bold">Freshness <span>You Can <br> Count</span> On,Prices You'll LOve!</h1>
+            <p class="py-6">
+              Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
+            </p>
+            <!-- <button class="btn btn-primary">Get Started</button> -->
+          </div>
+          <div class="w-64 h-64 object-contain">
+              <img src="assets/hero-vegetables.png" alt="">
+          </div>
+        </div>
+
+       </div>
+
+     </header>
+
+    <!-- Main Section -->
+     <main class="md:container md:mx-auto ">
+      <!-- Service Section -->
+      <section class="py-8 lg:py-24 px-24">
+        <h2 class="text-2xl font-bold py-10">Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- <h2>Services</h2> -->
+          <!-- card-1 -->
+          <div class="card bg-gray-200 shadow-md">
+            <figure>
+              <img class="pt-4"
+                src="assets/service.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body ">
+              <h2 class="card-title place-content-center">24/7 Services</h2>
+              <p >We provide top-quality services tailored <br> to your needs, ensuring reliability and satisfaction. Experience convenience and excellence with us!</p>
+            </div>
+          </div>
+          <!-- card-2 -->
+          <div class="card bg-gray-200 shadow-md">
+            <figure>
+              <img class="pt-4"
+                src="assets/delivery.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title place-content-center">24/7 Services</h2>
+              <p>Fast and reliable delivery services, bringing your essentials to your doorstep anytime!</p>
+            </div>
+          </div>
+          <!-- card-3 -->
+          <div class="card bg-gray-200 shadow-md">
+            <figure>
+              <img class="pt-4"
+                src="assets/healthy.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title place-content-center">24/7 Services</h2>
+              <p>Premium healthy products delivered fresh, ensuring quality and wellness every time!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Popular Products -->
+       <section class="mb-24">
+        <!-- Image Section -->
+
+         <!-- Price Section          -->
+        <div class="grid grid-cols-3 grid-rows-3 gap-4">
+          <div>
+            <img src="assets/Onion 43.png" alt="">
+          </div>
+          <div>
+                                   
+            <h2>Onion 1 KG</h2>
+            <p>$39.99</p>
+          </div>
+        </div>
+       </section>
+       <!-- Offer Cards -->
+        <section class="py-8 lg:py-24 px-24">
+          <h1 class="text-2xl font-bold py-10">Arrival & Offers</h1>
+          <div class="flex bg-green-500 pt-4">
+            <div class=" px-10 pt-4 pb-6">
+              <img class="pb-8" src="assets/dawat-logo.png" alt=""> 
+              <!-- <h3>The <Span class="text-l font-bold">FINEST</Span></h3> -->
+              <button class=" bg-green-800 px-6 py-2 rounded-box text-xl ">Cook Exotic Dishes
+              </button>   
+              <h1 class="text-2xl pt-2">UP to <span class="text-3xl font-bold">20% OFF</span> </h1>                          
+            </div>
+            <div><img src="assets/dawat-mock-up.png" alt=""></div>
+          </div>
+          <!-- Offer Card-2 -->
+          <div>
+            <div><img src="assets/india-gate-logo.png" alt=""></div>
+            <button class="bg-blue-800 px-6 py-2 rounded-box text-xl font-none">World's No.1 Rice</button>
+            <h1 class="text-2xl pt-2">UP to <span class="text-3xl font-bold">40% OFF</span> </h1>
+            <div><img src="assets/india-gate-mock-up.png" alt=""></div>
+          </div>
+          
+        </section>
+     </main>
+
+    <!-- Footer Section -->
+     <footer></footer>
+</body>
+</html>
