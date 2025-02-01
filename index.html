@@ -22,6 +22,38 @@
           border-bottom: 2px solid green;
 
         }
+        .fadeInUp {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Bounce effect for image */
+  .bounce {
+    animation: bounce 1.5s ease-in-out infinite;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
     </style>
     <!-- Font Awesome Tag -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -86,58 +118,19 @@
         </div>
       </nav>
 
-      <!-- <nav class="bg-gray-500 px-8 lg:px-24">
-
-      <div class="navbar ">
-        <div class="navbar-start">
-          <div class="dropdown ">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100  rounded-box z-[1] mt-3 w-52 p-2 shadow ">
-              <li><a>Product</a></li>
-              <li><a>Services</a></li>
-              <li><a>Contact Us</a></li>
-            </ul>
-          </div>
-          <img class="hidden md:flex" src="assets/logo-header.png" alt="">
-          <img class="lg:hidden" src="assets/Group.png" alt="">
-          
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Product</a></li>
-            <li><a>Services</a></li>
-            <li><a>Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="navbar-end hidden lg:flex gap-3">
-          <i class="fa-solid fa-magnifying-glass text-black"></i>
-          <i class="fa-solid fa-cart-shopping px-1 text-black"></i>
-          <a class="btn btn-outline btn-secondary">Login</a>
-          <a class="btn btn-primary">Register</a>
-        </div>
-        
-      </div>
-
-      </nav> -->
-
       <!-- banner -->
-       <div>
+      <div>
+        <div class="bg-base-200 md:min-h-screen items-center px-10">
+          <div class="text-center md:text-center pt-10">
+            <h1 class="text-xl md:text-4xl font-bold fadeInUp">Freshness <span class="text-green-700">You Can <br> Count</span> On, Prices You'll Love!</h1>
+            <p class="py-4 text-gray-500 fadeInUp">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+          </div>
+          <div class="flex justify-center fadeInUp">
+            <img class="md:w-[60%] md:h-[60%] bounce" src="assets/hero-vegetables.png" alt="">
+          </div>
+        </div>
+      </div>
+       <!-- <div>
          
         <div class="bg-base-200 md:min-h-screen items-center px-10 ">
           <div class="text-center md:text-center pt-10">
@@ -151,7 +144,7 @@
           </div>
         </div>
 
-       </div>
+       </div> -->
 
      </header>
 
